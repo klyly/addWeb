@@ -16,6 +16,24 @@ const Mock ={
             }))
         }
         return array;
-    }
+    },
+    getGoods(type){
+        let array=[];
+        for (let i=0;i<mockjs.Random.integer(5,10);i++){
+            array.push(mockjs.mock({
+                'name':(type == 0 ? '普通商品': type==1 ? "秒杀商品":"今日推荐") + i ,
+                'img':mockjs.Random.dataImage('60x100','商品实例图'),
+                'price':mockjs.Random.integer(20,500)+'元',
+                'sellCount':mockjs.Random.integer(10,100),
+                'count':mockjs.Random.integer(10,100),
+                'back':mockjs.Random.integer(10,100),
+                'backPrice':mockjs.Random.integer(0,5000)+'元',
+                'owner':mockjs.Random.cname(),
+                'time':mockjs.Random.datetime('yyyy-MM-dd A HH:mm:ss'),
+                'state':mockjs.Random.boolean()
+            }))
+        }
+        return array;
+    },
 }
 export default Mock;
