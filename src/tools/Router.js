@@ -44,13 +44,18 @@ const Router = createRouter({
             path:"/goods/:type",
             component:Goods,
             name:"Goods"
+         },
+        {
+            path:"/addGood/:type",
+            component:AddGood,
+            name:"AddGood"
         }
     ]
 })
 
 Router.beforeEach((from) =>{
     let isLogin =Store.getters.isLogin;
-    if (isLogin || from.name === 'login'){
+    if (isLogin || from.name == 'login'){
         return true;
     }else {
         return {name: 'login'}
