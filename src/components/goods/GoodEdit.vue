@@ -7,7 +7,7 @@
 <script>
 import E from "wangeditor";
 export default {
-  name: "Editor",
+
   data(){
     return{
       editor: null,

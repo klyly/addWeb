@@ -21,7 +21,7 @@ import Storage from '../../tools/Storage'
 import { ElMessage } from 'element-plus';
 
 export default {
-  name: "Login",
+
   data(){
     return{
       name:"",

@@ -1,10 +1,14 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import Login from "../components/login/Login";
-import Home from "../components/home/Home";
-import Store from "../tools/Storage";
-import Order from "../components/order/Order";
-import Goods from "../components/goods/Goods";
-import AddGood from "../components/goods/AddGood";
+import Login from "../components/login/Login"
+import Home from "../components/home/Home"
+import Store from "../tools/Storage"
+import Order from "../components/order/Order"
+import Goods from "../components/goods/Goods"
+import AddGood from "../components/goods/AddGood"
+import GoodCategory from "../components/goods/GoodCategory"
+import ManagerList from "../components/manager/ManagerList";
+import ManagerOrder from "../components/manager/ManagerOrder";
+import ManagerReqList from "../components/manager/ManagerReqList";
 const Router = createRouter({
     history:createWebHashHistory(),
     routes:[{
@@ -32,6 +36,24 @@ const Router = createRouter({
                     component:AddGood,
                     name:"AddGood"
                 },
+                {
+                    path:'category',
+                    component:GoodCategory,
+                    name:'GoodCategory'
+                },
+                {
+                    path: 'ownerlist',
+                    component:ManagerList,
+                    name: 'ManagerList'
+                }, {
+                    path: 'ownerreq',
+                    component: ManagerReqList,
+                    name: 'ManagerReqList'
+                }, {
+                    path: 'ownerorder',
+                    component: ManagerOrder,
+                    name: 'ManagerOrder'
+                }
             ],
             redirect:'/home/order/0'
         },
