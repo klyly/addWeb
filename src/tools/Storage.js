@@ -9,7 +9,7 @@ const Store = createStore({
     },
     getters: {
         isLogin:(state) => {
-            return state.userName.length>0
+            return state.userName.length > 0
         }
     },
     mutations: {
@@ -17,7 +17,7 @@ const Store = createStore({
             state.userName = "";
             state.userPassword = "";
 },
-registUserInfo(state,{name, password}) {
+        registUserInfo(state,{name, password}) {
             state.userName = name;
             state.password = password;
 }

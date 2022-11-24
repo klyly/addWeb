@@ -93,7 +93,7 @@ export default {
   data(){
     return{
       queryParams:{
-        phone:"",
+        wexin:"",
         name:"",
         state:""
       },
@@ -112,8 +112,8 @@ export default {
       this.managerList=Mock.getManagerList();
     },
     clear(){
-      this.queryParams={
-        phone:"",
+      this.queryParams= {
+        weixin:"",
         name:"",
         state: ""
       };

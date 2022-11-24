@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
+    "dev": "slidev",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "export": "slidev export"
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "echarts": "^5.4.0",
     "element-plus": "^2.2.20",
     "mockjs": "^1.1.0",
     "vue": "^3.2.13",

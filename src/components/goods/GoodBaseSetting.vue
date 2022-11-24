@@ -13,7 +13,7 @@
       商品简介：
     </div>
     <div class="input-field">
-      <el-input type="textarea" :rows="3" v-model="queryParams.desc"></el-input>
+      <el-input type="textarea" :rows="2" v-model="queryParams.desc"></el-input>
     </div>
   </el-container>
   <el-container class="content-row">

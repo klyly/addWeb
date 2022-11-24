@@ -37,12 +37,12 @@
 <script>
 export default {
   data(){
-    return{
+    return {
       categoryList:[
         {
-          id: 1231,
-          name: "男装",
-          manager: "管理员用户01"
+          id:1231,
+          name:"男装",
+          manager:"管理员用户01"
         },{
           id: 1131,
           name: "男鞋",
@@ -74,7 +74,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

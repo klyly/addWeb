@@ -52,14 +52,14 @@
       <el-button type="primary" @click="requestData">检索</el-button>
       <el-button type="primary" @click="clear">显示全部</el-button>
       <el-button type="success" @click="addGood">新增商品</el-button>
-
     </el-container>
   </div>
   <div>
     <el-table
       :data="goodsData"
       tooltio-effect="dark"
-      style="width: 100%">
+      style="width: 100%"
+    >
       <el-table-column
         label="商品"
         width="100">
@@ -99,7 +99,7 @@
           prop="name">
         <template #default="scope">
           <el-button @click="operate(scope.row)" :type="scope.row.state?'danger':'success'">
-            {{scope.row.stare ? '下架':'上架'}}</el-button>
+            {{scope.row.state ? '下架':'上架'}}</el-button>
         </template>
       </el-table-column>
       <el-table-column

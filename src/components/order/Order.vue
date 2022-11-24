@@ -76,7 +76,7 @@
       ref="multipleTable"
       :data="orderList"
       tooltip-effect="dark"
-      style=""
+      style="width: 100%"
       @selection-change="handleSelectionChange">
       <el-table-column
         type="selection"

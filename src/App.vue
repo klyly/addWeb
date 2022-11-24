@@ -1,20 +1,15 @@
 <template>
-  <router-view></router-view>
+  <router-view/>
 </template>
 
 <script>
-// import HelloWorld from './components/HelloWorld.vue'
-
 export default {
   name: 'App',
-  // components: {
-  //   HelloWorld
-  // }
 }
 </script>
 
 <style>
-body{
+body {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -31,22 +26,14 @@ body{
   display: inline-block;
   width: 90%;
 }
-.input-field {
-  max-height: 40px;
-}
 .input-tip {
   margin: 0 10px;
   line-height: 40px;
 }
+.input-field {
+  margin-right: 40px;
+}
 .content-row {
   margin-bottom: 20px;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
 }
 </style>

@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
+
 import Login from "../components/login/Login"
 import Home from "../components/home/Home"
 import Store from "../tools/Storage"
@@ -9,15 +10,18 @@ import GoodCategory from "../components/goods/GoodCategory"
 import ManagerList from "../components/manager/ManagerList";
 import ManagerOrder from "../components/manager/ManagerOrder";
 import ManagerReqList from "../components/manager/ManagerReqList";
+import DataCom from "@/components/financial/DataCom";
+
 const Router = createRouter({
     history:createWebHashHistory(),
-    routes:[{
-        path:"/login",
+    routes:[
+        {
+        path:'/login',
         component:Login,
         name:"login"
-    },
+        },
         {
-            path: '/home',
+            path:'/home',
             component: Home,
             name: "home",
             children:[
@@ -45,33 +49,60 @@ const Router = createRouter({
                     path: 'ownerlist',
                     component:ManagerList,
                     name: 'ManagerList'
-                }, {
+                },
+                {
                     path: 'ownerreq',
                     component: ManagerReqList,
                     name: 'ManagerReqList'
-                }, {
+                },
+                {
                     path: 'ownerorder',
                     component: ManagerOrder,
                     name: 'ManagerOrder'
+                },
+                {
+                    path: 'data',
+                    component: DataCom,
+                    name: 'DataCom'
                 }
             ],
             redirect:'/home/order/0'
-        },
-        {
-            path:"/order",
-            component:Order,
-            name:"Order"
-        },
-        {
-            path:"/goods/:type",
-            component:Goods,
-            name:"Goods"
-         },
-        {
-            path:"/addGood/:type",
-            component:AddGood,
-            name:"AddGood"
         }
+        // {
+        //     path:"/order/:type",
+        //     component:Order,
+        //     name:"Order"
+        // },
+        // {
+        //     path:"/goods/:type",
+        //     component:Goods,
+        //     name:"Goods"
+        //  },
+        // {
+        //     path:"/addGood/:type",
+        //     component:AddGood,
+        //     name:"AddGood"
+        // },
+        // {
+        //     path:"/category",
+        //     component:GoodCategory,
+        //     name:"GoodCategory"
+        // },
+        // {
+        //     path:"/ownerlist",
+        //     component:ManagerList,
+        //     name:"ManagerList"
+        // },
+        // {
+        //     path:"/ownerreq",
+        //     component:ManagerReqList,
+        //     name:"ManagerReqList"
+        // },
+        // {
+        //     path: "/ownerorder",
+        //     component: ManagerOrder,
+        //     name: 'ManagerOrder'
+        // }
     ]
 })
 

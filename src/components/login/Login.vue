@@ -56,7 +56,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #container{
   background: #595959;
   background-image: url("~@/assets/login_bg.jpg");
