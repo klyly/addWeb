@@ -38,7 +38,7 @@
             <span>店长管理</span>
           </template>
           <el-menu-item index="/home/ownerlist">店长列表</el-menu-item>
-          <el-menu-item index="/home/ownerreg">店长申请审批列表</el-menu-item>
+          <el-menu-item index="/home/ownerreq">店长申请审批列表</el-menu-item>
           <el-menu-item index="/home/ownerorder">店长订单</el-menu-item>
         </el-sub-menu>
         <el-sub-menu index="4">
